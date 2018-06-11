@@ -3,7 +3,7 @@
 ; Escrito por: Rigel Forneris 
 ; 18/02/16
 ; Escrito para o Z80 apenas para fins de aprendizado
-; Simplesmente imprime "Olá mundo!" na tela
+; Simplesmente imprime "Ola mundo!" na tela com o meu nome
 ;==============================================================
 
 
@@ -26,7 +26,6 @@ banks 1
 ; SDSC e leitor de rom
 ;==============================================================
 .sdsctag 1.2,"Ola mundo!!!","Apenas o primeiro codigo de teste","Rigel Forneris"
-
 .bank 0 slot 0
 .org $0000
 ;==============================================================
@@ -88,7 +87,7 @@ main:
     otir
 
     ;==============================================================
-    ; Carregando Arquivos de fonte
+    ; Carregando dados de fonte
     ;==============================================================
     ld a,$00
     out ($bf),a
@@ -108,7 +107,6 @@ main:
     ;==============================================================
     ; Escrevendo o texto em uma tabela de nomes
     ;==============================================================
-    ; by outputting $4000 ORed with $3800+0
     ld a,$00
     out ($bf),a
     ld a,$38|$40
