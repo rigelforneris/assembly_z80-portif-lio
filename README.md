@@ -3,7 +3,7 @@ Meu portifólio de assembly
 
 Este repositório contém apenas pesquisas iniciais.
 
-ola_mundo.asm: Primeiro código em assembly z80 criado (olá mundo = de praxe)
+ola_mundo.asm: Meu primeiro código em assembly z80 (olá mundo = de praxe)
 
 
 Mapeamento de caracteres:
